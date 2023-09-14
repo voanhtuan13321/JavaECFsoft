@@ -1,0 +1,14 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»¦åÛùÿÿÿÿ8—Öú•©1
+V
+java:S1854"9Remove this useless assignment to local variable "cbgvs".(™¨­¼8¡Öú•©1
+G
+java:S1481"*Remove this unused "cbgvs" local variable.(™¨­¼8¾Öú•©1
+G	java:S106"+Replace this use of System.out by a logger.(†ƒ……8ÀÖú•©1
+G	java:S106"+Replace this use of System.out by a logger.(ó…ùÅ8ÀÖú•©1
+F	java:S106"+Replace this use of System.out by a logger.(Á²18ÁÖú•©1
+G	java:S106"+Replace this use of System.out by a logger.(Î©§Í8ÁÖú•©1
+L	java:S106"+Replace this use of System.out by a logger.(İ±¤¾úÿÿÿÿ8ÂÖú•©1
+G	java:S106"+Replace this use of System.out by a logger.(¿äœÚ8ÂÖú•©1
+>	java:S131""Add a default case to this switch.(ŸÂœ·8ÃÖú•©1
+L	java:S106*"+Replace this use of System.out by a logger.(°ú±»ÿÿÿÿÿ8ÄÖú•©1
