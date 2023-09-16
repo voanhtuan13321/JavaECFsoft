@@ -19,4 +19,8 @@ public class InputUtil {
     return ScannerSingletonPattern.getInstance().nextLine();
   }
 
+  public static double inputDouble(String message) {
+    System.out.print(message);
+    return Double.parseDouble(ScannerSingletonPattern.getInstance().nextLine());
+  }
 }

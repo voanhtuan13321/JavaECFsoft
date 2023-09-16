@@ -32,3 +32,9 @@ B
 src/bai9/Bill.java,e\d\ed19dabb8532ba59546ca13e86d0f64bee855fa8
 B
 src/bai9/Main.java,3\4\3452597a3a3ce139dce59bb1096213cf2615bde2
+G
+src/exam/InputUtil.java,5\1\514016f2672080a28a8726c8c8c61a6a7429e231
+H
+src/bai10/Paragraph.java,8\d\8dea5df6a4020a03755c0a1f614db957c9561d68
+C
+src/bai10/Main.java,9\f\9f7fcc263d2d85bc7d56aee693385fd795df5cfd

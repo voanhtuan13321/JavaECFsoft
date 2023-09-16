@@ -1,5 +1,6 @@
 package bai7;
 
+import exam.InputUtil;
 import exam.ScannerSingletonPattern;
 
 import java.util.ArrayList;
@@ -24,8 +25,7 @@ public class Main {
       System.out.println("3. remove teacher by teacherCode");
       System.out.println("4. calculate ActualSalary of teacher");
       System.out.println("5. stop");
-      System.out.print(">>> input your choose: ");
-      String choose = ScannerSingletonPattern.getInstance().nextLine();
+      String choose = InputUtil.inputString(">>> input your choose: ");
 
       switch (choose) {
         case "1": {
@@ -34,15 +34,13 @@ public class Main {
         }
 
         case "2": {
-          System.out.print(">>> input teacherCode: ");
-          String teacherCode = ScannerSingletonPattern.getInstance().nextLine();
+          String teacherCode = InputUtil.inputString(">>> input teacherCode: ");
           showListStudentByTeacherCode(cbgvs, teacherCode);
           break;
         }
 
         case "3": {
-          System.out.print(">>> input teacherCode: ");
-          String teacherCode = ScannerSingletonPattern.getInstance().nextLine();
+          String teacherCode = InputUtil.inputString(">>> input teacherCode: ");
           removeTeacherByTeacherCode(cbgvs, teacherCode);
           break;
         }
@@ -92,7 +90,8 @@ public class Main {
   }
 
   private static void showListStudentByTeacherCode(List<CBGV> cbgvs, String teacherCode) {
-    List<CBGV> resultList = cbgvs.stream()
+    List<CBGV> resultList = cbgvs
+        .stream()
         .filter(cbgv -> cbgv.getTeacher().getTeacherCode().equals(teacherCode))
         .collect(Collectors.toList());
 
@@ -112,8 +111,7 @@ public class Main {
 
     try {
       teacher = inputTeacher(cbgvs);
-      System.out.print(">>> number of students: ");
-      int numberOfStudent = Integer.parseInt(ScannerSingletonPattern.getInstance().nextLine());
+      int numberOfStudent = InputUtil.inputNumber(">>> number of students: ");
 
       for (int i = 1; i <= numberOfStudent; i++) {
         Student student = null;
@@ -138,8 +136,7 @@ public class Main {
     Person person = inputPerson();
 
     // input infor student
-    System.out.print("studentCode: ");
-    String studentCode = ScannerSingletonPattern.getInstance().nextLine();
+    String studentCode = InputUtil.inputString("studentCode: ");
 
     if (isExistStudentCode(students, studentCode)) {
       throw new ExistStudentCodeException("already exists student");
@@ -151,7 +148,8 @@ public class Main {
     if (students.isEmpty()) {
       return false;
     }
-    return students.stream()
+    return students
+        .stream()
         .anyMatch(cbg -> cbg.getStudentCode().equals(studentCode));
   }
 
@@ -162,34 +160,28 @@ public class Main {
     Person person = inputPerson();
 
     // input infor teacher
-    System.out.print("teacherCode: ");
-    String teacherCode = ScannerSingletonPattern.getInstance().nextLine();
+    String teacherCode = InputUtil.inputString("teacherCode: ");
 
     if (isExistTeacherCode(cbgvs, teacherCode)) {
       throw new ExistTeacherCodeException("already teacher code");
     }
 
-    System.out.print("fixedSalary: ");
-    double fixedSalary = Double.parseDouble(ScannerSingletonPattern.getInstance().nextLine());
-    System.out.print("bonus: ");
-    double bonus = Double.parseDouble(ScannerSingletonPattern.getInstance().nextLine());
-    System.out.print("fine: ");
-    double fine = Double.parseDouble(ScannerSingletonPattern.getInstance().nextLine());
+    double fixedSalary = InputUtil.inputNumber("fixedSalary: ");
+    double bonus = InputUtil.inputNumber("bonus: ");
+    double fine = InputUtil.inputNumber("fine: ");
     return new Teacher(person.getName(), person.getAge(), person.getAddress(), teacherCode, fixedSalary, bonus, fine);
   }
 
   private static boolean isExistTeacherCode(List<CBGV> cbgvs, String teacherCode) {
-    return cbgvs.stream()
+    return cbgvs
+        .stream()
         .anyMatch(cbg -> cbg.getTeacher().getTeacherCode().equals(teacherCode));
   }
 
   private static Person inputPerson() {
-    System.out.print("name: ");
-    String name = ScannerSingletonPattern.getInstance().nextLine();
-    System.out.print("age: ");
-    int age = Integer.parseInt(ScannerSingletonPattern.getInstance().nextLine());
-    System.out.print("address: ");
-    String address = ScannerSingletonPattern.getInstance().nextLine();
+    String name = InputUtil.inputString("name: ");
+    int age = InputUtil.inputNumber("age: ");
+    String address = InputUtil.inputString("address: ");
     return new Person(name, age, address);
   }
 }

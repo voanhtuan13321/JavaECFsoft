@@ -1,28 +1,20 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ü”ÿ§şÿÿÿÿ8ââÖ¿©1
-G	java:S106"+Replace this use of System.out by a logger.(Ç²Ô¼8ëâÖ¿©1
-L	java:S106"+Replace this use of System.out by a logger.(Üéàˆüÿÿÿÿ8ëâÖ¿©1
-L	java:S106"+Replace this use of System.out by a logger.(“¢çøÿÿÿÿ8ëâÖ¿©1
-L	java:S106"+Replace this use of System.out by a logger.(ƒÜÃ“úÿÿÿÿ8ìâÖ¿©1
-G	java:S106"+Replace this use of System.out by a logger.(ÚËÒø8ìâÖ¿©1
-G	java:S106"+Replace this use of System.out by a logger.(›½È®8ìâÖ¿©1
-L	java:S106"+Replace this use of System.out by a logger.(®÷³Êşÿÿÿÿ8íâÖ¿©1
-G	java:S106"+Replace this use of System.out by a logger.(õÏ½ñ8íâÖ¿©1
-L	java:S106-"+Replace this use of System.out by a logger.(½¹™íÿÿÿÿÿ8ïâÖ¿©1
-L	java:S1065"+Replace this use of System.out by a logger.(üîúíÿÿÿÿÿ8ñâÖ¿©1
-X
-java:S1854U";Remove this useless assignment to local variable "address".(³¯³û8ç¨Û¿©1
-^
-java:S1854S"<Remove this useless assignment to local variable "fullName".(ö¸´áøÿÿÿÿ8ç¨Û¿©1
-G	java:S106Q"+Replace this use of System.out by a logger.(ë‘…¯8ôâÖ¿©1
-L	java:S106R"+Replace this use of System.out by a logger.(êÅÏ“şÿÿÿÿ8õâÖ¿©1
-O
-java:S1481S"-Remove this unused "fullName" local variable.(ö¸´áøÿÿÿÿ8ë¨Û¿©1
-L	java:S106T"+Replace this use of System.out by a logger.(ó¬’Ãşÿÿÿÿ8öâÖ¿©1
-I
-java:S1481U",Remove this unused "address" local variable.(³¯³û8ì¨Û¿©1
-L	java:S106Z"+Replace this use of System.out by a logger.(œ †Ëşÿÿÿÿ8öâÖ¿©1
-L	java:S106^"+Replace this use of System.out by a logger.(êÅÏ“şÿÿÿÿ8øªÙ¿©1
-L	java:S106`"+Replace this use of System.out by a logger.(ó¬’Ãşÿÿÿÿ8ï¨Û¿©1
-G	java:S106d"+Replace this use of System.out by a logger.(³ç‰–8ğ¨Û¿©1
-G	java:S106h"+Replace this use of System.err by a logger.(şì¥”8øâÖ¿©1
+
+java:S1192*"bDefine a constant instead of duplicating this literal ">>> input numOfElectricityMeter: " 3 times.(õ¢ñÕ8ñòÓİ©1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ü”ÿ§şÿÿÿÿ8õòÓİ©1
+G	java:S106"+Replace this use of System.out by a logger.(Ç²Ô¼8ˆôÓİ©1
+L	java:S106"+Replace this use of System.out by a logger.(Üéàˆüÿÿÿÿ8‰ôÓİ©1
+L	java:S106"+Replace this use of System.out by a logger.(“¢çøÿÿÿÿ8‰ôÓİ©1
+L	java:S106"+Replace this use of System.out by a logger.(ƒÜÃ“úÿÿÿÿ8‰ôÓİ©1
+G	java:S106"+Replace this use of System.out by a logger.(ÚËÒø8ŠôÓİ©1
+G	java:S106"+Replace this use of System.out by a logger.(›½È®8ŠôÓİ©1
+L	java:S106"+Replace this use of System.out by a logger.(®÷³Êşÿÿÿÿ8ŠôÓİ©1
+G	java:S106N"+Replace this use of System.out by a logger.(¡Ãè¢8ôÓİ©1
+L	java:S106P"+Replace this use of System.err by a logger.(ÎïÙ”üÿÿÿÿ8ôÓİ©1
+L	java:S106f"+Replace this use of System.err by a logger.(îÃàáøÿÿÿÿ8—ôÓİ©1
+G	java:S106i"+Replace this use of System.out by a logger.(ë‘…¯8–ôÓİ©1
+G	java:S106q"+Replace this use of System.out by a logger.( ßî·8šôÓİ©1
+M	java:S106€"+Replace this use of System.out by a logger.(œ †Ëşÿÿÿÿ8âÕİ©1
+H	java:S106Œ"+Replace this use of System.err by a logger.(şì¥”8šôÓİ©1
+H	java:S106£"+Replace this use of System.out by a logger.(„öÔ8¯÷Úİ©1
+M	java:S106¥"+Replace this use of System.err by a logger.(Çº¼óıÿÿÿÿ8¢ÑÖİ©1
