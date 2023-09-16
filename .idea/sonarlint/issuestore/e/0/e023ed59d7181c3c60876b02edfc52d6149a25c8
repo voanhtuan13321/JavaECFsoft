@@ -1,2 +1,10 @@
 
-E	java:S106"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ
+U
+java:S1854"9Remove this useless assignment to local variable "links".(Îä§	8àœ¼¼©1
+T
+java:S1854"7Remove this useless assignment to local variable "map".(îö8åœ¼¼©1
+E	java:S106"+Replace this use of System.out by a logger.(‚ŞÏ¥ıÿÿÿÿ
+E
+java:S1481"(Remove this unused "map" local variable.(îö8µ¼¼©1
+F
+java:S1481"*Remove this unused "links" local variable.(Îä§	8µ¼¼©1

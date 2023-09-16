@@ -1,5 +1,7 @@
 package exam;
 
+import java.util.*;
+
 /**
  * Title class.
  *
@@ -10,5 +12,11 @@ package exam;
 public class Main {
   public static void main(String[] args) {
     System.out.println("Hello world!");
+    Map<String, String> map = new HashMap<>();
+    Set<String> set = new HashSet<>();
+    LinkedHashSet<String> links = new LinkedHashSet<>();
+    TreeSet<String> tree = new TreeSet<>();
+    tree.add("");
+    set.add("");
   }
 }

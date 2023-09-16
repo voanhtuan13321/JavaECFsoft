@@ -92,14 +92,17 @@ public class Main {
   }
 
   private static void showListStudentByTeacherCode(List<CBGV> cbgvs, String teacherCode) {
-    List<CBGV> resultList = cbgvs.stream().filter(cbgv -> cbgv.getTeacher().getTeacherCode().equals(teacherCode)).collect(Collectors.toList());
+    List<CBGV> resultList = cbgvs.stream()
+        .filter(cbgv -> cbgv.getTeacher().getTeacherCode().equals(teacherCode))
+        .collect(Collectors.toList());
 
-    if (resultList.size() == 0) {
+    if (resultList.isEmpty()) {
       System.err.println("Don't find any teacher have teacherCode=" + teacherCode);
     } else {
       CBGV temp = resultList.get(0);
       System.out.println(temp.getTeacher());
-      temp.getStudents().forEach(System.out::println);
+      temp.getStudents()
+          .forEach(System.out::println);  // forEach(student -> System.out.println(student))
     }
   }
 
@@ -115,7 +118,7 @@ public class Main {
       for (int i = 1; i <= numberOfStudent; i++) {
         Student student = null;
         try {
-          student = inputStudent(students, i, teacher.getTeacherCode());
+          student = inputStudent(students, i);
           students.add(student);
         } catch (ExistStudentCodeException e) {
           System.err.println(e.getMessage());
@@ -129,7 +132,7 @@ public class Main {
     }
   }
 
-  private static Student inputStudent(List<Student> students, int i, String teacherCode) throws ExistStudentCodeException {
+  private static Student inputStudent(List<Student> students, int i) throws ExistStudentCodeException {
     System.out.println(">>> input infor student " + i);
     // input infor person
     Person person = inputPerson();
@@ -145,14 +148,14 @@ public class Main {
   }
 
   private static boolean isExistStudentCode(List<Student> students, String studentCode) {
-    if (students.size() == 0) {
+    if (students.isEmpty()) {
       return false;
     }
-    return !(students.stream()
-        .filter(cbg -> cbg.getStudentCode().equals(studentCode))
-        .count() == 0);
+    return students.stream()
+        .anyMatch(cbg -> cbg.getStudentCode().equals(studentCode));
   }
 
+  // không tạo doi tuong nua
   private static Teacher inputTeacher(List<CBGV> cbgvs) throws ExistTeacherCodeException {
     System.out.println(">>> input infor teacher: ");
     // input infor person
@@ -176,9 +179,8 @@ public class Main {
   }
 
   private static boolean isExistTeacherCode(List<CBGV> cbgvs, String teacherCode) {
-    return !(cbgvs.stream()
-        .filter(cbg -> cbg.getTeacher().getTeacherCode().equals(teacherCode))
-        .count() == 0);
+    return cbgvs.stream()
+        .anyMatch(cbg -> cbg.getTeacher().getTeacherCode().equals(teacherCode));
   }
 
   private static Person inputPerson() {
