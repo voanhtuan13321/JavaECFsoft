@@ -178,7 +178,7 @@ public class Main {
         .anyMatch(cbg -> cbg.getTeacher().getTeacherCode().equals(teacherCode));
   }
 
-  private static Person inputPerson() {
+  public static Person inputPerson() {
     String name = InputUtil.inputString("name: ");
     int age = InputUtil.inputNumber("age: ");
     String address = InputUtil.inputString("address: ");
