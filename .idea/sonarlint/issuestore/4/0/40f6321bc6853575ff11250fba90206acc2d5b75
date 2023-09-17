@@ -1,0 +1,18 @@
+
+{
+java:S1192!"^Define a constant instead of duplicating this literal "please enter a complex number" 3 times.(‘ø÷‰8Ãì¢ç©1
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¹›á‹8³‹¢ç©1
+G	java:S106"+Replace this use of System.out by a logger.(Ç²Ô¼8·‹¢ç©1
+L	java:S106"+Replace this use of System.out by a logger.(Ò“ëÑøÿÿÿÿ8·‹¢ç©1
+G	java:S106"+Replace this use of System.out by a logger.(¨‰ãì8¸‹¢ç©1
+L	java:S106"+Replace this use of System.out by a logger.(ÖåŠèúÿÿÿÿ8¸‹¢ç©1
+G	java:S106"+Replace this use of System.out by a logger.(ª¦ ö8¸‹¢ç©1
+L	java:S106"+Replace this use of System.out by a logger.(¬Œ½¡ıÿÿÿÿ8¸‹¢ç©1
+G	java:S106!"+Replace this use of System.err by a logger.(‘ø÷‰8¹‹¢ç©1
+G	java:S106#"+Replace this use of System.out by a logger.(¼Èí°8¹‹¢ç©1
+G	java:S106*"+Replace this use of System.err by a logger.(‘ø÷‰8¹‹¢ç©1
+L	java:S106,"+Replace this use of System.out by a logger.(¯ì”÷ıÿÿÿÿ8º‹¢ç©1
+L	java:S106."+Replace this use of System.out by a logger.(¬²Øùÿÿÿÿ8º‹¢ç©1
+G	java:S1065"+Replace this use of System.err by a logger.(‘ø÷‰8Ìì¢ç©1
+G	java:S1067"+Replace this use of System.out by a logger.(İ•±8Ìì¢ç©1
+L	java:S1069"+Replace this use of System.out by a logger.(ŠºöÎùÿÿÿÿ8Ìì¢ç©1
