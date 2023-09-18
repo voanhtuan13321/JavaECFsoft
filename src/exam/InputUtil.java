@@ -10,8 +10,14 @@ package exam;
 public class InputUtil {
 
   public static int inputNumber(String message) {
-    System.out.print(message);
-    return Integer.parseInt(ScannerSingletonPattern.getInstance().nextLine());
+    while (true) {
+      try {
+        System.out.print(message);
+        return Integer.parseInt(ScannerSingletonPattern.getInstance().nextLine());
+      } catch (NumberFormatException ex) {
+        System.err.println("input invalid number, please enter again");
+      }
+    }
   }
 
   public static String inputString(String message) {
@@ -20,7 +26,13 @@ public class InputUtil {
   }
 
   public static double inputDouble(String message) {
-    System.out.print(message);
-    return Double.parseDouble(ScannerSingletonPattern.getInstance().nextLine());
+    while (true) {
+      try {
+        System.out.print(message);
+        return Double.parseDouble(ScannerSingletonPattern.getInstance().nextLine());
+      } catch (NumberFormatException ex) {
+        System.err.println("input invalid number, please enter again");
+      }
+    }
   }
 }

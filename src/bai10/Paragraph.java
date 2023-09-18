@@ -10,9 +10,6 @@ package bai10;
 public class Paragraph {
   private String paragraph;
 
-  public Paragraph() {
-  }
-
   public Paragraph(String paragraph) {
     this.paragraph = paragraph;
   }
@@ -39,7 +36,7 @@ public class Paragraph {
 
   public int countTheNumberOfCharacters(char c) {
     int count = 0;
-    int length = paragraph.length();
+    int length = paragraph.trim().length();
     c = convertCharToUpperCase(c);
 
     for (int i = 0; i < length; i++) {

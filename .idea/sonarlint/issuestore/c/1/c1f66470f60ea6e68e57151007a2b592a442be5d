@@ -1,0 +1,9 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Â­´ûÿÿÿÿ8ß¼Ø¸ª1
+J	java:S108")Either remove or fill this block of code.(ð±‡Øúÿÿÿÿ8ó¼Ø¸ª1
+Z
+java:S1854"8Remove this useless assignment to local variable "size".(žÝÃùùÿÿÿÿ8ô¼Ø¸ª1
+K
+java:S1481")Remove this unused "size" local variable.(žÝÃùùÿÿÿÿ8ú¼Ø¸ª1
+K
+java:S1068")Remove this unused "rooms" private field.(Šö«öýÿÿÿÿ8ý¼Ø¸ª1
