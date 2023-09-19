@@ -1,10 +1,16 @@
 package bai13;
 
+import bai13.exception.BirthdayException;
+import bai13.exception.EmailException;
+import bai13.exception.FullNameException;
+import bai13.exception.PhoneException;
 import bai13.model.Employee;
 import bai13.model.Experience;
 import bai13.model.Fresher;
 import bai13.model.Intern;
 import exam.InputUtil;
+
+import java.io.IOException;
 
 /**
  * Title class.
@@ -18,12 +24,15 @@ public class Main {
     EmployeeManager employeeManager = new EmployeeManager();
 
     while (true) {
-      System.out.println("Chọn chức năng:");
+      System.out.println("\n\n\nChọn chức năng:");
       System.out.println("1. Thêm nhân viên");
       System.out.println("2. Sửa thông tin nhân viên");
       System.out.println("3. Xóa nhân viên");
       System.out.println("4. Hiển thị danh sách nhân viên");
-      System.out.println("5. Thoát");
+      System.out.println("5. Tìm tất cả nhân viên Intern");
+      System.out.println("6. Tìm tất cả nhân viên Experience");
+      System.out.println("7. Tìm tất cả nhân viên Fresher");
+      System.out.println("8. Thoát");
       int choice = InputUtil.inputNumber("Nhập lựa chọn của bạn: ");
 
       switch (choice) {
@@ -49,11 +58,7 @@ public class Main {
         case 3:
           // Xóa nhân viên
           int employeeIDToRemove = InputUtil.inputNumber("Nhập ID nhân viên cần xóa: ");
-
-          // Kiểm tra xem nhân viên có tồn tại không
-          Employee employeeToRemove = employeeManager.findEmployeeByID(employeeIDToRemove);
-          if (employeeToRemove != null) {
-            employeeManager.removeEmployee(employeeIDToRemove);
+          if (employeeManager.removeEmployee(employeeIDToRemove)) {
             System.out.println("Xóa nhân viên thành công.");
           } else {
             System.out.println("Không tìm thấy nhân viên có ID tương ứng.");
@@ -64,6 +69,15 @@ public class Main {
           employeeManager.showAllEmployees();
           break;
         case 5:
+          employeeManager.findAllInterns().forEach(System.out::println);
+          break;
+        case 6:
+          employeeManager.findAllExperience().forEach(System.out::println);
+          break;
+        case 7:
+          employeeManager.findAllFresher().forEach(System.out::println);
+          break;
+        case 8:
           // Thoát chương trình
           return;
         default:
@@ -87,38 +101,42 @@ public class Main {
 
     String fullName = "";
     while (true) {
-      fullName = InputUtil.inputString("Nhập tên: ");
-      if (isValidName(fullName)) {
+      try {
+        fullName = InputUtil.inputString("Nhập tên: ");
+        Validator.fullName(fullName);
         break;
-      } else {
-        System.err.println("Tên không hợp lệ, vui lòng nhập lại");
+      } catch (FullNameException e) {
+        System.err.println(e.getMessage());
       }
     }
     String birthDay = "";
     while (true) {
-      birthDay = InputUtil.inputString("Nhập ngày sinh (dd-MM-yyyy): ");
-      if (isValidDateOfBirth(birthDay)) {
+      try {
+        birthDay = InputUtil.inputString("Nhập ngày sinh (dd-MM-yyyy): ");
+        Validator.birthDate(birthDay);
         break;
-      } else {
-        System.err.println("Ngày sinh không hợp lệ, vui lòng nhập lại");
+      } catch (BirthdayException e) {
+        System.err.println(e.getMessage());
       }
     }
     String phone = "";
     while (true) {
-      phone = InputUtil.inputString("Nhập số điện thoại (10 số): ");
-      if (isValidPhoneNumber(phone)) {
+      try {
+        phone = InputUtil.inputString("Nhập số điện thoại (10 số): ");
+        Validator.phoneNumber(phone);
         break;
-      } else {
-        System.err.println("Số điện thoại không hợp lệ, vui lòng nhập lại");
+      } catch (PhoneException e) {
+        System.err.println(e.getMessage());
       }
     }
     String email = "";
     while (true) {
-      email = InputUtil.inputString("Nhập email: ");
-      if (isValidEmail(email)) {
+      try {
+        email = InputUtil.inputString("Nhập email: ");
+        Validator.email(email);
         break;
-      } else {
-        System.err.println("Email không hợp lệ, vui lòng nhập lại");
+      } catch (EmailException e) {
+        System.err.println(e.getMessage());
       }
     }
 
@@ -128,7 +146,16 @@ public class Main {
 
       employee = new Experience(fullName, birthDay, phone, email, expInYear, proSkill);
     } else if (employeeType == 1) {
-      String graduationDate = InputUtil.inputString("Nhập ngày tốt nghiệp: ");
+      String graduationDate = "";
+      while (true) {
+        try {
+          graduationDate = InputUtil.inputString("Nhập ngày tốt nghiệp: ");
+          Validator.birthDate(graduationDate);
+          break;
+        } catch (BirthdayException e) {
+          System.err.println(e.getMessage());
+        }
+      }
       String graduationRank = InputUtil.inputString("Nhập xếp loại tốt nghiệp: ");
       String education = InputUtil.inputString("Nhập trường tốt nghiệp: ");
 
@@ -142,27 +169,6 @@ public class Main {
     }
 
     return employee;
-  }
-
-  public static boolean isValidDateOfBirth(String dateOfBirth) {
-    // Ví dụ: dd-MM-yyyy
-    String regex = "\\d{2}-\\d{2}-\\d{4}";
-    return dateOfBirth.matches(regex);
-  }
-
-  public static boolean isValidEmail(String email) {
-    String regex = "^[A-Za-z0-9+_.-]+@(.+)$";
-    return email.matches(regex);
-  }
-
-  public static boolean isValidName(String name) {
-    String regex = "^[A-Za-z\\s]+$";
-    return name.matches(regex);
-  }
-
-  public static boolean isValidPhoneNumber(String phoneNumber) {
-    String regex = "^\\d{10}$";
-    return phoneNumber.matches(regex);
   }
 
 }

@@ -1,0 +1,21 @@
+
+c	java:S112¡"FDefine and throw a dedicated exception instead of using a generic one.(„ĞÌà8¥¬Âäª1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¶ñ‚âüÿÿÿÿ8©¬Âäª1
+L	java:S106"+Replace this use of System.out by a logger.(Å¸ÛÍıÿÿÿÿ8©­Âäª1
+L	java:S106"+Replace this use of System.out by a logger.(©õ…Ğøÿÿÿÿ8ª­Âäª1
+G	java:S106"+Replace this use of System.out by a logger.(à‚Î¤8«­Âäª1
+G	java:S106"+Replace this use of System.out by a logger.(ÙíÍĞ8«­Âäª1
+L	java:S106"+Replace this use of System.out by a logger.(ÆÕÇİúÿÿÿÿ8¬­Âäª1
+F	java:S106"+Replace this use of System.out by a logger.(û×Ë	8¬­Âäª1
+L	java:S106/"+Replace this use of System.out by a logger.(‚Ê¡œıÿÿÿÿ8°­Âäª1
+G	java:S1063"+Replace this use of System.out by a logger.(¹‚‰ì8±­Âäª1
+L	java:S106>"+Replace this use of System.out by a logger.(ûû•şÿÿÿÿ8³­Âäª1
+G	java:S106@"+Replace this use of System.out by a logger.(¹‚‰ì8´­Âäª1
+G	java:S106K"+Replace this use of System.out by a logger.(®‹Ä¸8µ­Âäª1
+n
+java:S3776P"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ä–Ô!8·­Âäª1
+G	java:S106W"+Replace this use of System.err by a logger.(—·ÑÅ8»­Âäª1
+L	java:S106d"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8½­Âäª1
+L	java:S106n"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8¿­Âäª1
+L	java:S106x"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8Á­Âäª1
+H	java:S106"+Replace this use of System.err by a logger.(ä†£Ú8Â­Âäª1

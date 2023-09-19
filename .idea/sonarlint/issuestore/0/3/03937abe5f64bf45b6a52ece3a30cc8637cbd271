@@ -1,12 +1,4 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Â­´ûÿÿÿÿ8ß €¹ª1
-L
-java:S1068"*Remove this unused "idRoom" private field.(±ñíûúÿÿÿÿ8ä €¹ª1
-X
-java:S1068"6Remove this unused "numberOfRentalDays" private field.(°¨½µÿÿÿÿÿ8ä €¹ª1
-I
-java:S1068",Remove this unused "roomType" private field.(Ö”ÿ±8ä €¹ª1
-G
-java:S1068"*Remove this unused "status" private field.(ƒÌ‡Õ8å €¹ª1
-M
-java:S1068"+Remove this unused "persons" private field.(îáñØþÿÿÿÿ8å €¹ª1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Â­´ûÿÿÿÿ8¤ôþÃª1
+a
+java:S3358O"DExtract this nested ternary operation into an independent statement.(ÌùÓ¶8¶ôþÃª1

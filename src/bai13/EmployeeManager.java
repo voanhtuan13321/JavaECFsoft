@@ -33,21 +33,23 @@ public class EmployeeManager {
     for (int i = 0; i < size; i++) {
       Employee employee = employees.get(i);
       if (employee.getID() == employeeID) {
+        updatedEmployee.setID(employee.getID());
         employees.set(i, updatedEmployee);
         return;
       }
     }
   }
 
-  public void removeEmployee(int employeeID) {
+  public boolean removeEmployee(int employeeID) {
     Iterator<Employee> iterator = employees.iterator();
     while (iterator.hasNext()) {
       Employee employee = iterator.next();
       if (employee.getID() == employeeID) {
         iterator.remove();
-        return;
+        return true;
       }
     }
+    return false;
   }
 
   public void showAllEmployees() {

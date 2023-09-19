@@ -1,9 +1,22 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Â­´ûÿÿÿÿ8ß¼Ø¸ª1
-J	java:S108")Either remove or fill this block of code.(ğ±‡Øúÿÿÿÿ8ó¼Ø¸ª1
-Z
-java:S1854"8Remove this useless assignment to local variable "size".(İÃùùÿÿÿÿ8ô¼Ø¸ª1
-K
-java:S1481")Remove this unused "size" local variable.(İÃùùÿÿÿÿ8ú¼Ø¸ª1
-K
-java:S1068")Remove this unused "rooms" private field.(Šö«öıÿÿÿÿ8ı¼Ø¸ª1
+d
+java:S11928"GDefine a constant instead of duplicating this literal "cmnd: " 3 times.(•é‘µ8×¯´Åª1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´Â­´ûÿÿÿÿ8Ü¯´Åª1
+G	java:S106#"+Replace this use of System.out by a logger.(Ç²Ô¼8†±´Åª1
+L	java:S106$"+Replace this use of System.out by a logger.(˜ò¾¿üÿÿÿÿ8†±´Åª1
+G	java:S106%"+Replace this use of System.out by a logger.(ûÊ¸ 8†±´Åª1
+L	java:S106&"+Replace this use of System.out by a logger.(ìÇŸ¹üÿÿÿÿ8‡±´Åª1
+G	java:S106'"+Replace this use of System.out by a logger.(áçòŒ8‡±´Åª1
+L	java:S106("+Replace this use of System.out by a logger.(¬Œ½¡ıÿÿÿÿ8‡±´Åª1
+L	java:S106;"+Replace this use of System.err by a logger.(õ¿ˆ‹ÿÿÿÿÿ8Š±´Åª1
+L	java:S106C"+Replace this use of System.err by a logger.(ĞÒîàşÿÿÿÿ8Š±´Åª1
+G	java:S106E"+Replace this use of System.out by a logger.(ößéØ8‹±´Åª1
+L	java:S106K"+Replace this use of System.out by a logger.(°ú±»ÿÿÿÿÿ8‹±´Åª1
+G	java:S106t"+Replace this use of System.out by a logger.(øÜùê8‘±´Åª1
+L	java:S106u"+Replace this use of System.out by a logger.(Å“§ÿÿÿÿÿ8‘±´Åª1
+M	java:S106€"+Replace this use of System.err by a logger.(Ğäìøúÿÿÿÿ8“±´Åª1
+H	java:S106Š"+Replace this use of System.err by a logger.(ÈÿêÉ8”±´Åª1
+H	java:S106 "+Replace this use of System.out by a logger.(”²«Ñ8—±´Åª1
+M	java:S106¯"+Replace this use of System.err by a logger.(»³íúÿÿÿÿ8š±´Åª1
+M	java:S106Î"+Replace this use of System.out by a logger.(Ñ¢…âúÿÿÿÿ8±´Åª1
+M	java:S106Ñ"+Replace this use of System.out by a logger.(áö°²şÿÿÿÿ8Ÿ±´Åª1
