@@ -1,11 +1,11 @@
 package org.example.bai14;
 
-import exam.InputUtil;
 import org.example.bai14.exception.InvalidDOBException;
 import org.example.bai14.exception.InvalidFullNameException;
 import org.example.bai14.exception.InvalidPhoneNumberException;
 import org.example.bai14.model.GoodStudent;
 import org.example.bai14.model.NormalStudent;
+import org.example.common.InputUtil;
 
 /**
  * Title class.

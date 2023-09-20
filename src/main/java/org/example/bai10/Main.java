@@ -1,6 +1,7 @@
 package org.example.bai10;
 
-import exam.InputUtil;
+
+import org.example.common.InputUtil;
 
 /**
  * Title class.

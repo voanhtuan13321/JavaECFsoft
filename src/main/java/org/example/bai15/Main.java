@@ -1,8 +1,8 @@
 package org.example.bai15;
 
-import exam.InputUtil;
 import org.example.bai15.model.Student;
 import org.example.bai15.model.University;
+import org.example.common.InputUtil;
 
 /**
  * Title class.

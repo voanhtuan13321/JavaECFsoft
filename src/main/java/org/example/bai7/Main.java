@@ -1,6 +1,6 @@
 package org.example.bai7;
 
-import exam.InputUtil;
+import org.example.common.InputUtil;
 
 import java.util.ArrayList;
 import java.util.List;

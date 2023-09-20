@@ -1,6 +1,7 @@
 package org.example.bai12;
 
-import exam.InputUtil;
+
+import org.example.common.InputUtil;
 
 import java.util.List;
 

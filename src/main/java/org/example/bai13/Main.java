@@ -1,6 +1,5 @@
 package org.example.bai13;
 
-import exam.InputUtil;
 import org.example.bai13.exception.BirthdayException;
 import org.example.bai13.exception.EmailException;
 import org.example.bai13.exception.FullNameException;
@@ -9,6 +8,7 @@ import org.example.bai13.model.Employee;
 import org.example.bai13.model.Experience;
 import org.example.bai13.model.Fresher;
 import org.example.bai13.model.Intern;
+import org.example.common.InputUtil;
 
 /**
  * Title class.

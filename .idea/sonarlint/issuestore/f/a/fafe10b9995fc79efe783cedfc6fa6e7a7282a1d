@@ -1,0 +1,21 @@
+
+]
+java:S11928"GDefine a constant instead of duplicating this literal "cmnd: " 3 times.(•é‘µ
+@	java:S106#"+Replace this use of System.out by a logger.(Ç²Ô¼
+E	java:S106$"+Replace this use of System.out by a logger.(˜ò¾¿üÿÿÿÿ
+@	java:S106%"+Replace this use of System.out by a logger.(ûÊ¸ 
+E	java:S106&"+Replace this use of System.out by a logger.(ìÇŸ¹üÿÿÿÿ
+@	java:S106'"+Replace this use of System.out by a logger.(áçòŒ
+E	java:S106("+Replace this use of System.out by a logger.(¬Œ½¡ıÿÿÿÿ
+E	java:S106;"+Replace this use of System.err by a logger.(õ¿ˆ‹ÿÿÿÿÿ
+E	java:S106C"+Replace this use of System.err by a logger.(ĞÒîàşÿÿÿÿ
+@	java:S106E"+Replace this use of System.out by a logger.(ößéØ
+E	java:S106K"+Replace this use of System.out by a logger.(°ú±»ÿÿÿÿÿ
+@	java:S106t"+Replace this use of System.out by a logger.(øÜùê
+E	java:S106u"+Replace this use of System.out by a logger.(Å“§ÿÿÿÿÿ
+F	java:S106€"+Replace this use of System.err by a logger.(Ğäìøúÿÿÿÿ
+A	java:S106Š"+Replace this use of System.err by a logger.(ÈÿêÉ
+A	java:S106 "+Replace this use of System.out by a logger.(”²«Ñ
+F	java:S106¯"+Replace this use of System.err by a logger.(»³íúÿÿÿÿ
+F	java:S106Î"+Replace this use of System.out by a logger.(Ñ¢…âúÿÿÿÿ
+F	java:S106Ñ"+Replace this use of System.out by a logger.(áö°²şÿÿÿÿ
