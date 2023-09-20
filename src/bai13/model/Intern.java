@@ -1,8 +1,5 @@
 package bai13.model;
 
-import bai13.model.Certificate;
-import bai13.model.Employee;
-
 /**
  * Intern class.
  *
@@ -58,7 +55,7 @@ public class Intern extends Employee {
   @Override
   public void showInfo() {
     System.out.println("Employee Type: Intern");
-    System.out.println("ID: " + getID());
+    System.out.println("ID: " + getId());
     System.out.println("Full Name: " + getFullName());
     // Add more specific info for Intern employees
     System.out.println("Majors: " + majors);

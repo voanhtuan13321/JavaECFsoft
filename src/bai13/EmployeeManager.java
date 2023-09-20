@@ -8,6 +8,7 @@ import bai13.model.Intern;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 /**
@@ -32,8 +33,8 @@ public class EmployeeManager {
     int size = employees.size();
     for (int i = 0; i < size; i++) {
       Employee employee = employees.get(i);
-      if (employee.getID() == employeeID) {
-        updatedEmployee.setID(employee.getID());
+      if (employee.getId() == employeeID) {
+        updatedEmployee.setId(employee.getId());
         employees.set(i, updatedEmployee);
         return;
       }
@@ -44,7 +45,7 @@ public class EmployeeManager {
     Iterator<Employee> iterator = employees.iterator();
     while (iterator.hasNext()) {
       Employee employee = iterator.next();
-      if (employee.getID() == employeeID) {
+      if (employee.getId() == employeeID) {
         iterator.remove();
         return true;
       }
@@ -58,7 +59,7 @@ public class EmployeeManager {
 
   public Employee findEmployeeByID(int employeeID) {
     for (Employee employee : employees) {
-      if (employee.getID() == employeeID) {
+      if (employee.getId() == employeeID) {
         return employee; // Trả về nhân viên có ID tương ứng
       }
     }

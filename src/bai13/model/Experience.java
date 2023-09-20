@@ -1,8 +1,5 @@
 package bai13.model;
 
-import bai13.model.Certificate;
-import bai13.model.Employee;
-
 /**
  * Experience class.
  *
@@ -48,7 +45,7 @@ public class Experience extends Employee {
   @Override
   public void showInfo() {
     System.out.println("Employee Type: Experience");
-    System.out.println("ID: " + getID());
+    System.out.println("ID: " + getId());
     System.out.println("Full Name: " + getFullName());
     // Add more specific info for Experience employees
     System.out.println("Experience in Years: " + expInYear);

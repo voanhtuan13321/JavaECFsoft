@@ -1,8 +1,5 @@
 package bai13.model;
 
-import bai13.model.Certificate;
-import bai13.model.Employee;
-
 /**
  * Fresher  class.
  *
@@ -59,7 +56,7 @@ public class Fresher extends Employee {
   @Override
   public void showInfo() {
     System.out.println("Employee Type: Fresher");
-    System.out.println("ID: " + getID());
+    System.out.println("ID: " + getId());
     System.out.println("Full Name: " + getFullName());
     // Add more specific info for Fresher employees
     System.out.println("Graduation Date: " + graduationDate);

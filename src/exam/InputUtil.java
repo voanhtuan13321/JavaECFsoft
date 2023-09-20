@@ -35,4 +35,15 @@ public class InputUtil {
       }
     }
   }
+
+  public static boolean inputBoolean(String message) {
+    while (true) {
+      try {
+        System.out.print(message);
+        return Boolean.getBoolean(ScannerSingletonPattern.getInstance().nextLine());
+      } catch (NumberFormatException ex) {
+        System.err.println("input invalid boolean, please enter again");
+      }
+    }
+  }
 }

@@ -11,7 +11,7 @@ import java.util.List;
  * @since 18/09/2023
  */
 public abstract class Employee {
-  private int ID;
+  private int id;
   private String fullName;
   private String birthDay;
   private String phone;
@@ -21,7 +21,7 @@ public abstract class Employee {
   private List<Certificate> certificates;
 
   public Employee(String fullName, String birthDay, String phone, String email, int employeeType) {
-    this.ID = ++employeeCount;
+    this.id = ++employeeCount;
     this.fullName = fullName;
     this.birthDay = birthDay;
     this.phone = phone;
@@ -30,12 +30,12 @@ public abstract class Employee {
     this.certificates = new ArrayList<>();
   }
 
-  public int getID() {
-    return ID;
+  public int getId() {
+    return id;
   }
 
-  public void setID(int ID) {
-    this.ID = ID;
+  public void setId(int id) {
+    this.id = id;
   }
 
   public String getFullName() {
@@ -97,7 +97,7 @@ public abstract class Employee {
   @Override
   public String toString() {
     return "Employee{" +
-        "ID=" + ID +
+        "ID=" + id +
         ", fullName='" + fullName + '\'' +
         ", birthDay='" + birthDay + '\'' +
         ", phone='" + phone + '\'' +
