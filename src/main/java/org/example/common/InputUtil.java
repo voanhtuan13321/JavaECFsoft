@@ -1,5 +1,11 @@
 package org.example.common;
 
+import org.example.bai13.exception.BirthdayException;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Input class.
  *
@@ -8,7 +14,6 @@ package org.example.common;
  * @since 16/09/2023
  */
 public class InputUtil {
-
   public static int inputNumber(String message) {
     while (true) {
       try {
@@ -44,6 +49,17 @@ public class InputUtil {
       } catch (NumberFormatException ex) {
         System.err.println("input invalid boolean, please enter again");
       }
+    }
+  }
+
+  public static Date inputDate(String message) throws BirthdayException {
+    System.out.print(message);
+    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+    String date = ScannerSingletonPattern.getInstance().nextLine();
+    try {
+      return simpleDateFormat.parse(date);
+    } catch (ParseException e) {
+      throw new BirthdayException(e.getMessage());
     }
   }
 }

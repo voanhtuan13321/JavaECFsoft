@@ -4,6 +4,8 @@ import org.example.bai14.exception.InvalidDOBException;
 import org.example.bai14.exception.InvalidFullNameException;
 import org.example.bai14.exception.InvalidPhoneNumberException;
 
+import java.util.Date;
+
 /**
  * GoodStudent class.
  *
@@ -15,12 +17,11 @@ public class GoodStudent extends Student {
   private double gpa;
   private String bestRewardName;
 
-  public GoodStudent(String fullName, String doB, String sex, String phoneNumber,
-                     String universityName, String gradeLevel, double gpa, String bestRewardName)
-      throws InvalidFullNameException, InvalidDOBException, InvalidPhoneNumberException {
-    super(fullName, doB, sex, phoneNumber, universityName, gradeLevel);
-    setGpa(gpa);
-    setBestRewardName(bestRewardName);
+  public GoodStudent(int id, String fullName, Date doB, String sex, String phoneNumber,
+                     String universityName, String gradeLevel, double gpa, String bestRewardName) {
+    super(id, fullName, doB, sex, phoneNumber, universityName, gradeLevel);
+    this.gpa = gpa;
+    this.bestRewardName = bestRewardName;
   }
 
   // Getter và setter cho các thuộc tính riêng của GoodStudent

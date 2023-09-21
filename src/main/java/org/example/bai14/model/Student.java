@@ -16,6 +16,7 @@ import java.util.Date;
  * @since 19/09/2023
  */
 public abstract class Student {
+  private int id;
   private String fullName;
   private Date doB;
   private String sex;
@@ -23,15 +24,15 @@ public abstract class Student {
   private String universityName;
   private String gradeLevel;
 
-  public Student(String fullName, String doB, String sex, String phoneNumber, String universityName,
-                 String gradeLevel) throws InvalidFullNameException, InvalidDOBException,
-      InvalidPhoneNumberException {
-    setFullName(fullName);
-    setDoB(doB);
-    setSex(sex);
-    setPhoneNumber(phoneNumber);
-    setUniversityName(universityName);
-    setGradeLevel(gradeLevel);
+  public Student(int id, String fullName, Date doB, String sex, String phoneNumber,
+                 String universityName, String gradeLevel) {
+    this.id = id;
+    this.fullName = fullName;
+    this.doB = doB;
+    this.sex = sex;
+    this.phoneNumber = phoneNumber;
+    this.universityName = universityName;
+    this.gradeLevel = gradeLevel;
   }
 
   // Getter và setter cho các thuộc tính
@@ -51,13 +52,8 @@ public abstract class Student {
     return doB;
   }
 
-  public void setDoB(String doB) throws InvalidDOBException {
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-    try {
-      this.doB = sdf.parse(doB);
-    } catch (ParseException e) {
-      throw new InvalidDOBException("Invalid date of birth format");
-    }
+  public void setDoB(Date doB) {
+    this.doB = doB;
   }
 
   public String getSex() {
@@ -93,6 +89,19 @@ public abstract class Student {
 
   public void setGradeLevel(String gradeLevel) {
     this.gradeLevel = gradeLevel;
+  }
+
+  @Override
+  public String toString() {
+    return "Student{" +
+        "id=" + id +
+        ", fullName='" + fullName + '\'' +
+        ", doB=" + doB +
+        ", sex='" + sex + '\'' +
+        ", phoneNumber='" + phoneNumber + '\'' +
+        ", universityName='" + universityName + '\'' +
+        ", gradeLevel='" + gradeLevel + '\'' +
+        '}';
   }
 
   // Phương thức trừu tượng ShowMyInfo

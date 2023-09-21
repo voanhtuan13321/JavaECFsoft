@@ -1,0 +1,17 @@
+
+t
+java:S1192""^Define a constant instead of duplicating this literal "please enter a complex number" 3 times.(‘ø÷‰
+@	java:S106"+Replace this use of System.out by a logger.(Ç²Ô¼
+E	java:S106"+Replace this use of System.out by a logger.(Ò“ëÑøÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(¨‰ãì
+E	java:S106"+Replace this use of System.out by a logger.(ÖåŠèúÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(ª¦ ö
+E	java:S106"+Replace this use of System.out by a logger.(¬Œ½¡ıÿÿÿÿ
+@	java:S106""+Replace this use of System.err by a logger.(‘ø÷‰
+@	java:S106$"+Replace this use of System.out by a logger.(¼Èí°
+@	java:S106+"+Replace this use of System.err by a logger.(‘ø÷‰
+E	java:S106-"+Replace this use of System.out by a logger.(¯ì”÷ıÿÿÿÿ
+E	java:S106/"+Replace this use of System.out by a logger.(¬²Øùÿÿÿÿ
+@	java:S1066"+Replace this use of System.err by a logger.(‘ø÷‰
+@	java:S1068"+Replace this use of System.out by a logger.(İ•±
+E	java:S106:"+Replace this use of System.out by a logger.(ŠºöÎùÿÿÿÿ

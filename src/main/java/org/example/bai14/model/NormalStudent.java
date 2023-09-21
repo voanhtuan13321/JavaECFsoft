@@ -4,6 +4,8 @@ import org.example.bai14.exception.InvalidDOBException;
 import org.example.bai14.exception.InvalidFullNameException;
 import org.example.bai14.exception.InvalidPhoneNumberException;
 
+import java.util.Date;
+
 /**
  * NormalStudent class.
  *
@@ -12,30 +14,30 @@ import org.example.bai14.exception.InvalidPhoneNumberException;
  * @since 19/09/2023
  */
 public class NormalStudent extends Student {
-  private int englishScore;
-  private int entryTestScore;
+  private double englishScore;
+  private double entryTestScore;
 
-  public NormalStudent(String fullName, String doB, String sex, String phoneNumber,
-                       String universityName, String gradeLevel, int englishScore, int entryTestScore)
-      throws InvalidFullNameException, InvalidDOBException, InvalidPhoneNumberException {
-    super(fullName, doB, sex, phoneNumber, universityName, gradeLevel);
-    setEnglishScore(englishScore);
-    setEntryTestScore(entryTestScore);
+  public NormalStudent(int id, String fullName, Date doB, String sex, String phoneNumber,
+                       String universityName, String gradeLevel, double englishScore,
+                       double entryTestScore) {
+    super(id, fullName, doB, sex, phoneNumber, universityName, gradeLevel);
+    this.englishScore = englishScore;
+    this.entryTestScore = entryTestScore;
   }
 
-  public int getEnglishScore() {
+  public double getEnglishScore() {
     return englishScore;
   }
 
-  public void setEnglishScore(int englishScore) {
+  public void setEnglishScore(double englishScore) {
     this.englishScore = englishScore;
   }
 
-  public int getEntryTestScore() {
+  public double getEntryTestScore() {
     return entryTestScore;
   }
 
-  public void setEntryTestScore(int entryTestScore) {
+  public void setEntryTestScore(double entryTestScore) {
     this.entryTestScore = entryTestScore;
   }
 
