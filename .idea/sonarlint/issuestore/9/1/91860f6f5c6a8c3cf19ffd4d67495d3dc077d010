@@ -1,16 +1,12 @@
 
-G	java:S106~"+Replace this use of System.err by a logger.(üÁ‚Ş8·ß˜«1
-H	java:S106›"+Replace this use of System.out by a logger.(œ‹¤8–·ß˜«1
-H	java:S106"+Replace this use of System.out by a logger.(Ûã³İ8–·ß˜«1
-M	java:S106¦"+Replace this use of System.out by a logger.(ÀÍ÷şÿÿÿÿ8˜·ß˜«1
-G	java:S106«"+Replace this use of System.out by a logger.(”¼,8˜·ß˜«1
-M	java:S106¼"+Replace this use of System.out by a logger.(ı¹çÜøÿÿÿÿ8›·ß˜«1
-M	java:S106¿"+Replace this use of System.out by a logger.(Û…¶Ûøÿÿÿÿ8›·ß˜«1
-M	java:S106Õ"+Replace this use of System.out by a logger.(¨¹öùıÿÿÿÿ8Ÿ·ß˜«1
-M	java:S106Ø"+Replace this use of System.out by a logger.(Û…¶Ûøÿÿÿÿ8 ·ß˜«1
-H	java:S106à"+Replace this use of System.out by a logger.(†˜„8ö¸™«1
-M	java:S106â"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8÷¸™«1
-T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8÷Ù™«1
-N
-java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹8÷Ù™«1
+G	java:S106y"+Replace this use of System.err by a logger.(üÁ‚Ş8±—ş·«1
+H	java:S106–"+Replace this use of System.out by a logger.(œ‹¤8¹—ş·«1
+H	java:S106˜"+Replace this use of System.out by a logger.(Ûã³İ8¹—ş·«1
+M	java:S106¡"+Replace this use of System.out by a logger.(ÀÍ÷şÿÿÿÿ8¼—ş·«1
+G	java:S106¦"+Replace this use of System.out by a logger.(”¼,8½—ş·«1
+M	java:S106·"+Replace this use of System.out by a logger.(ı¹çÜøÿÿÿÿ8Â—ş·«1
+M	java:S106º"+Replace this use of System.out by a logger.(Û…¶Ûøÿÿÿÿ8Ã—ş·«1
+M	java:S106Ğ"+Replace this use of System.out by a logger.(¨¹öùıÿÿÿÿ8Ç—ş·«1
+M	java:S106Ó"+Replace this use of System.out by a logger.(Û…¶Ûøÿÿÿÿ8È—ş·«1
+H	java:S106Û"+Replace this use of System.out by a logger.(†˜„8É—ş·«1
+M	java:S106İ"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8É—ş·«1

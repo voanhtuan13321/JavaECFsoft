@@ -55,3 +55,9 @@ _
 /src/main/java/org/example/bai14/Properties.java,a\9\a9eb72696b13f7743936fb3ef1419d4009a08292
 c
 3src/main/java/org/example/bai14/StudentManager.java,9\1\91860f6f5c6a8c3cf19ffd4d67495d3dc077d010
+m
+=src/main/java/org/example/bai13/exception/PhoneException.java,e\6\e62b36842af6fa969f41e6e7cf864c045240859b
+^
+.src/main/java/org/example/bai13/Validator.java,b\a\ba6a966fabb855d3ba98d925e43064bf2ce00c3e
+m
+=src/main/java/org/example/common/ScannerSingletonPattern.java,7\3\7332482f147d60f526e25511db9f3eb00921c9b6

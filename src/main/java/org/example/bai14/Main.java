@@ -40,7 +40,15 @@ public class Main {
               System.out.println("Tùy chọn không hợp lệ. Vui lòng chọn lại.");
             }
           }
-          String fullName = InputUtil.inputString("Họ tên: ");
+          String fullName = "";
+          while (true) {
+            fullName = InputUtil.inputString("Họ tên: ");
+            if (fullName != null && fullName.length() >= 10 && fullName.length() <=50) {
+              break;
+            } else {
+              System.err.println("Họ tên phải >= 10 và <= 50 ký tự");
+            }
+          }
           Date doB = null;
           while (true) {
             try {

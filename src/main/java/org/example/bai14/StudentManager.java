@@ -1,17 +1,15 @@
 package org.example.bai14;
 
-import org.example.bai14.exception.InvalidDOBException;
-import org.example.bai14.exception.InvalidFullNameException;
-import org.example.bai14.exception.InvalidPhoneNumberException;
 import org.example.bai14.model.GoodStudent;
 import org.example.bai14.model.NormalStudent;
 import org.example.bai14.model.Student;
 import org.example.common.ConnectDB;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -95,7 +93,7 @@ public class StudentManager {
     NormalStudent student = null;
     try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME);
          PreparedStatement preparedStatement
-             = connection.prepareStatement(Properties.Query.SELECT_GOOD);
+             = connection.prepareStatement(Properties.Query.SELECT_NORMAL);
          ResultSet resultSet = preparedStatement.executeQuery()) {
 
       while (resultSet.next()) {
@@ -221,7 +219,7 @@ public class StudentManager {
     System.out.println("All Students Info:");
     for (Student student : students) {
       System.out.println();
-      student.ShowMyInfo();
+      student.showMyInfo();
     }
   }
 }

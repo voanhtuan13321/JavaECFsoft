@@ -1,11 +1,8 @@
 package org.example.bai14.model;
 
-import org.example.bai14.exception.InvalidDOBException;
 import org.example.bai14.exception.InvalidFullNameException;
 import org.example.bai14.exception.InvalidPhoneNumberException;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -105,5 +102,5 @@ public abstract class Student {
   }
 
   // Phương thức trừu tượng ShowMyInfo
-  public abstract void ShowMyInfo();
+  public abstract void showMyInfo();
 }

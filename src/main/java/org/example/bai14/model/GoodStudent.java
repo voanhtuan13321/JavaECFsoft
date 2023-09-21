@@ -44,7 +44,7 @@ public class GoodStudent extends Student {
 
   // Override phương thức ShowMyInfo để hiển thị thông tin riêng của GoodStudent
   @Override
-  public void ShowMyInfo() {
+  public void showMyInfo() {
     System.out.println("Full Name: " + getFullName());
     System.out.println("Date of Birth: " + getDoB());
     System.out.println("Sex: " + getSex());

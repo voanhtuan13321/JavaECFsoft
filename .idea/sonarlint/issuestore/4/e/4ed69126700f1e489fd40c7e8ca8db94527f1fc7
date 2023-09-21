@@ -1,16 +1,16 @@
 
 \	java:S107"AConstructor has 9 parameters, which is greater than 7 authorized.(šì­|8 ´î—«1
-µ
-java:S1130"’Remove the declaration of thrown exception 'org.example.bai14.exception.InvalidFullNameException', as it cannot be thrown from constructor's body.(º¸†áøÿÿÿÿ8˜•‡™«1
-°
-java:S1130"Remove the declaration of thrown exception 'org.example.bai14.exception.InvalidDOBException', as it cannot be thrown from constructor's body.(º¸†áøÿÿÿÿ8˜•‡™«1
-¸
-java:S1130"•Remove the declaration of thrown exception 'org.example.bai14.exception.InvalidPhoneNumberException', as it cannot be thrown from constructor's body.(º¸†áøÿÿÿÿ8™•‡™«1
-G	java:S1060"+Replace this use of System.out by a logger.(œ¯ã»8¥´î—«1
-G	java:S1061"+Replace this use of System.out by a logger.(Çú·ô8¥´î—«1
-L	java:S1062"+Replace this use of System.out by a logger.(åê’ìÿÿÿÿÿ8¦´î—«1
-F	java:S1063"+Replace this use of System.out by a logger.(ÇíV8¦´î—«1
-G	java:S1064"+Replace this use of System.out by a logger.(–ñ§ö8¦´î—«1
-G	java:S1065"+Replace this use of System.out by a logger.(øï­Å8§´î—«1
-G	java:S1066"+Replace this use of System.out by a logger.(ñŸŠ8§´î—«1
-L	java:S1067"+Replace this use of System.out by a logger.(Öığúÿÿÿÿ8§´î—«1
+G	java:S106/"+Replace this use of System.out by a logger.(œ¯ã»8¥´î—«1
+G	java:S1060"+Replace this use of System.out by a logger.(Çú·ô8¥´î—«1
+L	java:S1061"+Replace this use of System.out by a logger.(åê’ìÿÿÿÿÿ8¦´î—«1
+F	java:S1062"+Replace this use of System.out by a logger.(ÇíV8¦´î—«1
+G	java:S1063"+Replace this use of System.out by a logger.(–ñ§ö8¦´î—«1
+G	java:S1064"+Replace this use of System.out by a logger.(øï­Å8§´î—«1
+G	java:S1065"+Replace this use of System.out by a logger.(ñŸŠ8§´î—«1
+L	java:S1066"+Replace this use of System.out by a logger.(Öığúÿÿÿÿ8§´î—«1
+n
+java:S1128"LRemove this unused import 'org.example.bai14.exception.InvalidDOBException'.(§½çÜùÿÿÿÿ8Âç§««1
+s
+java:S1128"QRemove this unused import 'org.example.bai14.exception.InvalidFullNameException'.(¨µ¾óùÿÿÿÿ8Âç§««1
+p
+java:S1128"TRemove this unused import 'org.example.bai14.exception.InvalidPhoneNumberException'.(à™­:8Âç§««1
