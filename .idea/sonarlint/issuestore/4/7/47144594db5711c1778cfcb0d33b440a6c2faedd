@@ -1,0 +1,14 @@
+
+^
+java:S1117`"<Rename "fullName" which hides the field declared at line 19.(øÖÈÎÿÿÿÿÿ8ÔÜå¬1
+T
+java:S1117a"7Rename "dob" which hides the field declared at line 20.(ñ›ı8´åó¬1
+L	java:S106g"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8È‹¡‘¬1
+d
+java:S1117j"BRename "enrollmentYear" which hides the field declared at line 21.(×ªÖãüÿÿÿÿ8×Üå¬1
+]
+java:S1117k"ARename "entranceScore" which hides the field declared at line 22.(âŞ#8ÙÜå¬1
+e
+java:S1117l"CRename "academicResults" which hides the field declared at line 23.(Œë«òúÿÿÿÿ8éî¬1
+L	java:S106y"+Replace this use of System.out by a logger.(µ¯–²ûÿÿÿÿ8ãÜå¬1
+H	java:S106‚"+Replace this use of System.out by a logger.(ã©8æÜå¬1

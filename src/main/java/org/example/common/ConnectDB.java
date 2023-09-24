@@ -22,11 +22,8 @@ public class ConnectDB {
       String connectionURL = "jdbc:sqlserver://ANHTUAN\\TUANEXPRESS:1433;databaseName="
           + dbName + ";trustServerCertificate=true;encrypt=true;";
       conn = DriverManager.getConnection(connectionURL, USERNAME, PASSWORD);
-      System.out.println("Ket noi thanh cong!");
       return conn;
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
-    } catch (SQLException e) {
+    } catch (ClassNotFoundException | SQLException e) {
       e.printStackTrace();
     }
     return null;

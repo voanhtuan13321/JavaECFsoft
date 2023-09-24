@@ -14,7 +14,7 @@ import java.util.Date;
  * @since 16/09/2023
  */
 public class InputUtil {
-  public static int inputNumber(String message) {
+  public static int inputInteger(String message) {
     while (true) {
       try {
         System.out.print(message);

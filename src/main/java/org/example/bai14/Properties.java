@@ -8,7 +8,7 @@ package org.example.bai14;
  * @since 20/09/2023
  */
 public final class Properties {
-  public static final String DB_NAME = "ec_java_bai14";
+  public static final String DB_NAME_BAI14 = "ec_java_bai14";
 
   class ColumnNames {
     public static final String ID = "id";

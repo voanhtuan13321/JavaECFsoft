@@ -65,7 +65,7 @@ public class Main {
     }
 
     String fullName = InputUtil.inputString("full name: ");
-    int age = InputUtil.inputNumber("age: ");
+    int age = InputUtil.inputInteger("age: ");
     Sex sex = null;
 
     while (true) {

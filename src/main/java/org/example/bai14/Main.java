@@ -26,7 +26,7 @@ public class Main {
       System.out.println("2. Chọn ứng viên trúng tuyển");
       System.out.println("3. Hiển thị thông tin tất cả sinh viên");
       System.out.println("4. Thoát");
-      int choice = InputUtil.inputNumber("Chọn tùy chọn (1-4): ");
+      int choice = InputUtil.inputInteger("Chọn tùy chọn (1-4): ");
 
       switch (choice) {
         case 1:
@@ -96,8 +96,8 @@ public class Main {
                 universityName, gradeLevel, gpa, bestRewardName);
             studentManager.addStudent(goodStudent, studentType);
           } else if (studentType.equalsIgnoreCase("normal")) {
-            int englishScore = InputUtil.inputNumber("Điểm TOEIC: ");
-            int entryTestScore = InputUtil.inputNumber("Điểm thi đầu vào: ");
+            int englishScore = InputUtil.inputInteger("Điểm TOEIC: ");
+            int entryTestScore = InputUtil.inputInteger("Điểm thi đầu vào: ");
 
             NormalStudent normalStudent = new NormalStudent(0, fullName, doB, sex, phoneNumber,
                 universityName, gradeLevel, englishScore, entryTestScore);
@@ -108,7 +108,7 @@ public class Main {
           break;
 
         case 2:
-          int numCandidatesToHire = InputUtil.inputNumber("Nhập số lượng ứng viên cần tuyển: ");
+          int numCandidatesToHire = InputUtil.inputInteger("Nhập số lượng ứng viên cần tuyển: ");
           studentManager.selectCandidates(numCandidatesToHire);
           break;
 

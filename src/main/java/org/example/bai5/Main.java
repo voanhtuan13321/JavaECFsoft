@@ -129,7 +129,7 @@ public class Main {
         System.err.println("id room not exists or status on, please enter again");
       }
     }
-    int numberOfRentalDays = InputUtil.inputNumber("number of rental days: ");
+    int numberOfRentalDays = InputUtil.inputInteger("number of rental days: ");
     RoomType roomType = null;
     while (true) {
       try {
@@ -156,12 +156,12 @@ public class Main {
 
   private static List<Person> inputPersons() {
     List<Person> persons = new ArrayList<>();
-    int numberOfPersons = InputUtil.inputNumber("number of persons: ");
+    int numberOfPersons = InputUtil.inputInteger("number of persons: ");
     for (int i = 1; i <= numberOfPersons; i++) {
       System.out.println(">>> enter info person " + i);
       String cmnd = inputCmnd();
       String name = InputUtil.inputString("name: ");
-      int age = InputUtil.inputNumber("age: ");
+      int age = InputUtil.inputInteger("age: ");
       persons.add(new Person(cmnd,name,age));
     }
 

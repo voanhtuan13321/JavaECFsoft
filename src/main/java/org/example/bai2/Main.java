@@ -100,17 +100,17 @@ public class Main {
     switch (type) {
       case "book":
         String authorName = InputUtil.inputString("author name: ");
-        int pageNumber = InputUtil.inputNumber("page number: ");
+        int pageNumber = InputUtil.inputInteger("page number: ");
         document = new Book(documentCode, publishingHouseName, releaseNumber, authorName, pageNumber);
         break;
       case "magazine":
-        int issueNumber = InputUtil.inputNumber("issue number: ");
-        int releaseMonth = InputUtil.inputNumber("release month: ");
+        int issueNumber = InputUtil.inputInteger("issue number: ");
+        int releaseMonth = InputUtil.inputInteger("release month: ");
         document = new Magazine(documentCode, publishingHouseName, releaseNumber, issueNumber,
             releaseMonth);
         break;
       case "newspaper":
-        int releaseDay = InputUtil.inputNumber("release day: ");
+        int releaseDay = InputUtil.inputInteger("release day: ");
         document = new Newspaper(documentCode, publishingHouseName, releaseNumber, releaseDay);
         break;
       default:

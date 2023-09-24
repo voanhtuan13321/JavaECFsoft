@@ -110,7 +110,7 @@ public class Main {
 
     try {
       teacher = inputTeacher(cbgvs);
-      int numberOfStudent = InputUtil.inputNumber(">>> number of students: ");
+      int numberOfStudent = InputUtil.inputInteger(">>> number of students: ");
 
       for (int i = 1; i <= numberOfStudent; i++) {
         Student student = null;
@@ -165,9 +165,9 @@ public class Main {
       throw new ExistTeacherCodeException("already teacher code");
     }
 
-    double fixedSalary = InputUtil.inputNumber("fixedSalary: ");
-    double bonus = InputUtil.inputNumber("bonus: ");
-    double fine = InputUtil.inputNumber("fine: ");
+    double fixedSalary = InputUtil.inputInteger("fixedSalary: ");
+    double bonus = InputUtil.inputInteger("bonus: ");
+    double fine = InputUtil.inputInteger("fine: ");
     return new Teacher(person.getName(), person.getAge(), person.getAddress(), teacherCode, fixedSalary, bonus, fine);
   }
 
@@ -179,7 +179,7 @@ public class Main {
 
   public static Person inputPerson() {
     String name = InputUtil.inputString("name: ");
-    int age = InputUtil.inputNumber("age: ");
+    int age = InputUtil.inputInteger("age: ");
     String address = InputUtil.inputString("address: ");
     return new Person(name, age, address);
   }

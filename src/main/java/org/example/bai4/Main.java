@@ -22,7 +22,7 @@ public class Main {
 
       switch (choose) {
         case "1": {
-          int numOfFamilies = InputUtil.inputNumber("numOfFamilies: ");
+          int numOfFamilies = InputUtil.inputInteger("numOfFamilies: ");
           town.addFamily(numOfFamilies);
           break;
         }

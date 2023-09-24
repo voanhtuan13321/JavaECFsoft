@@ -39,19 +39,19 @@ public class Main {
         }
 
         case "3": {
-          int numOfElectricityMeter = InputUtil.inputNumber(">>> input numOfElectricityMeter: ");
+          int numOfElectricityMeter = InputUtil.inputInteger(">>> input numOfElectricityMeter: ");
           removeCustomerByNumOfElectricityMeter(customers, numOfElectricityMeter);
           break;
         }
 
         case "4": {
-          int numOfElectricityMeter = InputUtil.inputNumber(">>> input numOfElectricityMeter: ");
+          int numOfElectricityMeter = InputUtil.inputInteger(">>> input numOfElectricityMeter: ");
           updateCustomerByNumOfElectricityMeter(customers, numOfElectricityMeter);
           break;
         }
 
         case "5": {
-          int numOfElectricityMeter = InputUtil.inputNumber(">>> input numOfElectricityMeter: ");
+          int numOfElectricityMeter = InputUtil.inputInteger(">>> input numOfElectricityMeter: ");
           calculateCustomerByNumOfElectricityMeter(customers, numOfElectricityMeter);
           break;
         }
@@ -71,8 +71,8 @@ public class Main {
     Customer customer = getCustomerByNumOfElectricityMeter(customers, numOfElectricityMeter);
 
     if (customer != null) {
-      int oldElectricity = InputUtil.inputNumber("input oldElectricity: ");
-      int newElectricity = InputUtil.inputNumber("input newElectricity: ");
+      int oldElectricity = InputUtil.inputInteger("input oldElectricity: ");
+      int newElectricity = InputUtil.inputInteger("input newElectricity: ");
 
       Bill bill = new Bill(customer, oldElectricity, newElectricity);
       System.out.println(bill);
@@ -134,7 +134,7 @@ public class Main {
 
     int numOfElectricityMeter = 0;
     while (true) {
-      numOfElectricityMeter = InputUtil.inputNumber("input number of electricity meter: ");
+      numOfElectricityMeter = InputUtil.inputInteger("input number of electricity meter: ");
 
       if (isNumOfElectricityMeterExists(customers, numOfElectricityMeter)) {
         System.err.println("already exists numOfElectricityMeter, please input again");

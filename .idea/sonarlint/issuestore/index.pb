@@ -61,3 +61,17 @@ m
 .src/main/java/org/example/bai13/Validator.java,b\a\ba6a966fabb855d3ba98d925e43064bf2ce00c3e
 m
 =src/main/java/org/example/common/ScannerSingletonPattern.java,7\3\7332482f147d60f526e25511db9f3eb00921c9b6
+i
+9src/main/java/org/example/bai15/model/AcademicResult.java,f\a\fa9b9244713bf1b83629583065053a127a56fa5c
+i
+9src/main/java/org/example/bai15/model/RegularStudent.java,4\7\47144594db5711c1778cfcb0d33b440a6c2faedd
+j
+:src/main/java/org/example/bai15/model/PartTimeStudent.java,b\e\bedde8ba6b1700187a672843d00ee3fc2f86d08a
+e
+5src/main/java/org/example/bai15/model/Department.java,d\c\dc4e15a7baa1c18fcaf5266e5a792c87c3d3227c
+o
+?src/main/java/org/example/bai15/model/CheckTypeStudentable.java,a\8\a87428d75ce7de245f95f895adfbd3581b254ebb
+w
+Gsrc/main/java/org/example/bai14/exception/InvalidFullNameException.java,2\e\2e74328b639d18d1d91e6c708400626f3cfb05ce
+c
+3src/main/java/org/example/bai15/dao/StudentDao.java,6\c\6cf8f3470e227af994d2b3af3cb8da710ff1ef68

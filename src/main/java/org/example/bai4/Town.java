@@ -43,7 +43,7 @@ public class Town {
 
   private Family inputFamily() {
     String address = InputUtil.inputString("address: ");
-    int numOfPerson = InputUtil.inputNumber("numOfPerson: ");
+    int numOfPerson = InputUtil.inputInteger("numOfPerson: ");
     List<Person> persons = inputPersons(numOfPerson);
     return new Family(address, persons);
   }
@@ -70,7 +70,7 @@ public class Town {
       }
     }
     String name = InputUtil.inputString("name: ");
-    int age = InputUtil.inputNumber("age: ");
+    int age = InputUtil.inputInteger("age: ");
     String jobName = InputUtil.inputString("jobName: ");
     return new Person(cmnd, name, age, jobName);
   }

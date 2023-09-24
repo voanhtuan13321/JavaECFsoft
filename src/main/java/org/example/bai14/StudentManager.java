@@ -23,7 +23,7 @@ public class StudentManager {
   public List<Student> getAllStudent() {
     List<Student> students = new ArrayList<>();
     Student student = null;
-    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME);
+    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME_BAI14);
          PreparedStatement preparedStatement
              = connection.prepareStatement(Properties.Query.SELECT_ALL);
          ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -61,7 +61,7 @@ public class StudentManager {
   public List<GoodStudent> getGoodStudents() {
     List<GoodStudent> students = new ArrayList<>();
     GoodStudent student = null;
-    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME);
+    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME_BAI14);
          PreparedStatement preparedStatement
              = connection.prepareStatement(Properties.Query.SELECT_GOOD);
          ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -91,7 +91,7 @@ public class StudentManager {
   public List<NormalStudent> getNormalStudents() {
     List<NormalStudent> students = new ArrayList<>();
     NormalStudent student = null;
-    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME);
+    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME_BAI14);
          PreparedStatement preparedStatement
              = connection.prepareStatement(Properties.Query.SELECT_NORMAL);
          ResultSet resultSet = preparedStatement.executeQuery()) {
@@ -119,7 +119,7 @@ public class StudentManager {
 
   public void addStudent(Student student, String type) {
     System.err.println(student);
-    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME);
+    try (Connection connection = ConnectDB.getConnection(Properties.DB_NAME_BAI14);
          PreparedStatement preparedStatement =
              connection.prepareStatement(Properties.Query.INSERT_STUDENT)) {
 

@@ -31,7 +31,7 @@ public class Main {
       System.out.println("6. Tìm tất cả nhân viên Experience");
       System.out.println("7. Tìm tất cả nhân viên Fresher");
       System.out.println("8. Thoát");
-      int choice = InputUtil.inputNumber("Nhập lựa chọn của bạn: ");
+      int choice = InputUtil.inputInteger("Nhập lựa chọn của bạn: ");
 
       switch (choice) {
         case 1:
@@ -41,7 +41,7 @@ public class Main {
           break;
         case 2:
           // Sửa thông tin nhân viên
-          int employeeIDToEdit = InputUtil.inputNumber("Nhập ID nhân viên cần sửa: ");
+          int employeeIDToEdit = InputUtil.inputInteger("Nhập ID nhân viên cần sửa: ");
 
           // Kiểm tra xem nhân viên có tồn tại không
           Employee existingEmployee = employeeManager.findEmployeeByID(employeeIDToEdit);
@@ -55,7 +55,7 @@ public class Main {
           break;
         case 3:
           // Xóa nhân viên
-          int employeeIDToRemove = InputUtil.inputNumber("Nhập ID nhân viên cần xóa: ");
+          int employeeIDToRemove = InputUtil.inputInteger("Nhập ID nhân viên cần xóa: ");
           if (employeeManager.removeEmployee(employeeIDToRemove)) {
             System.out.println("Xóa nhân viên thành công.");
           } else {
@@ -89,7 +89,7 @@ public class Main {
     int employeeType = -1;
     while (true) {
       employeeType
-          = InputUtil.inputNumber("Chọn loại nhân viên (0: Experience, 1: Fresher, 2: Intern): ");
+          = InputUtil.inputInteger("Chọn loại nhân viên (0: Experience, 1: Fresher, 2: Intern): ");
       if (employeeType < 0 || employeeType > 2) {
         System.err.println("Chọn không hợp lệ, vui lòng chọn lại");
       } else {
@@ -139,7 +139,7 @@ public class Main {
     }
 
     if (employeeType == 0) {
-      int expInYear = InputUtil.inputNumber("Nhập số năm kinh nghiệm: ");
+      int expInYear = InputUtil.inputInteger("Nhập số năm kinh nghiệm: ");
       String proSkill = InputUtil.inputString("Nhập kỹ năng chuyên môn: ");
 
       employee = new Experience(fullName, birthDay, phone, email, expInYear, proSkill);

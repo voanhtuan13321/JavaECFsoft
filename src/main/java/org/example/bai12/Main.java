@@ -78,23 +78,23 @@ public class Main {
       }
     }
     String manufacturer = InputUtil.inputString("manufacturer: ");
-    int yearOfManufacturer = InputUtil.inputNumber("yearOfManufact: ");
+    int yearOfManufacturer = InputUtil.inputInteger("yearOfManufact: ");
     double price = InputUtil.inputDouble("price: ");
     String color = InputUtil.inputString("color: ");
     switch (type) {
       case "car":
-        int numberOfSeats = InputUtil.inputNumber("numberOfSeats: ");
+        int numberOfSeats = InputUtil.inputInteger("numberOfSeats: ");
         String engineType = InputUtil.inputString("engineType: ");
         vehicle = new Car(id, manufacturer, yearOfManufacturer, price, color, numberOfSeats, engineType);
         break;
 
       case "motor":
-        int wattage = InputUtil.inputNumber("wattage: ");
+        int wattage = InputUtil.inputInteger("wattage: ");
         vehicle = new Motorbike(id, manufacturer, yearOfManufacturer, price, color, wattage);
         break;
 
       case "truck":
-        int payload = InputUtil.inputNumber("payload: ");
+        int payload = InputUtil.inputInteger("payload: ");
         vehicle = new Truck(id, manufacturer, yearOfManufacturer, price, color, payload);
         break;
 
