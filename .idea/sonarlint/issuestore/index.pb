@@ -75,3 +75,9 @@ w
 Gsrc/main/java/org/example/bai14/exception/InvalidFullNameException.java,2\e\2e74328b639d18d1d91e6c708400626f3cfb05ce
 c
 3src/main/java/org/example/bai15/dao/StudentDao.java,6\c\6cf8f3470e227af994d2b3af3cb8da710ff1ef68
+_
+/src/main/java/org/example/bai15/Properties.java,7\2\72c083c0200bf1344a926fb1cd08666cac71e044
+j
+:src/main/java/org/example/bai15/dao/AcademicResultDao.java,4\3\43a3a343c2b94f39a00f7b68dc2ebe5825337bdf
+f
+6src/main/java/org/example/bai15/dao/DepartmentDao.java,c\0\c031a412643dba5ceefa2d669421c7037d7e0fe1

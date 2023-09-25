@@ -20,8 +20,8 @@ public class AcademicResult {
     return semester;
   }
 
-  public double getGpa() {
-    return gpa;
+  public float getGpa() {
+    return (float) gpa;
   }
 
   @Override

@@ -3,7 +3,7 @@ package org.example.bai15.dao;
 import org.example.bai15.Properties;
 import org.example.bai15.model.Department;
 import org.example.bai15.model.RegularStudent;
-import org.example.common.ConnectionSigletonPattern;
+import org.example.common.ConnectDB;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -33,7 +33,7 @@ public class DepartmentDao {
   public List<Department> getAll() {
     List<Department> departments = new ArrayList<>();
     String selectSQL = "SELECT * FROM Departments";
-    try (Connection conn = ConnectionSigletonPattern.getInstance(Properties.DB_NAME);
+    try (Connection conn = ConnectDB.getConnection(Properties.DB_NAME);
          PreparedStatement preparedStatement = conn.prepareStatement(selectSQL)) {
       ResultSet resultSet = preparedStatement.executeQuery();
 
@@ -44,7 +44,6 @@ public class DepartmentDao {
         List<RegularStudent> students = StudentDao.getInstance().getAllStudent(id);
         departments.add(new Department(id, name, students));
       }
-      resultSet.close();
     } catch (SQLException e) {
       throw new RuntimeException(e);
     }

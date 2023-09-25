@@ -1,18 +1,29 @@
 
-h
-java:S1301 "KReplace this "switch" statement by "if" statements to increase readability.(¨ÕÉ8“£–ê«1
-[
-java:S1854">Remove this useless assignment to local variable "department".(û‘ ß8Ÿ£–ê«1
-L
-java:S1481"/Remove this unused "department" local variable.(û‘ ß8¦£–ê«1
-G	java:S106"+Replace this use of System.out by a logger.(Ñ¦ç8£”£¼«1
-G	java:S106"+Replace this use of System.out by a logger.(¥Û¯Û8£”£¼«1
-G	java:S106"+Replace this use of System.out by a logger.(Ñ€üÂ8£”£¼«1
-F	java:S106"+Replace this use of System.out by a logger.(‹¾—{8£”£¼«1
-G	java:S106"+Replace this use of System.out by a logger.(á“‰ô8¤”£¼«1
-L	java:S106"+Replace this use of System.out by a logger.(‡¨¹ıÿÿÿÿ8¤”£¼«1
-F	java:S106"+Replace this use of System.out by a logger.(…×¶<8¤”£¼«1
-L	java:S106"+Replace this use of System.out by a logger.(×¥©§ıÿÿÿÿ8¤”£¼«1
-G	java:S106"+Replace this use of System.out by a logger.(¬‹²Ğ8¤”£¼«1
-G	java:S106"+Replace this use of System.out by a logger.(ïì¦8¥”£¼«1
-L	java:S106#"+Replace this use of System.out by a logger.(ë…çÿÿÿÿÿ8¬”£¼«1
+h	java:S112¢"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ŒŒ Ñ¬1
+m
+java:S1192R"KDefine a constant instead of duplicating this literal ">>> khoa: " 3 times.(ã·˜«ÿÿÿÿÿ8Œ Ñ¬1
+‹
+java:S1130"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(Á¯¦ş8Õ“ Ñ¬1
+L	java:S106"+Replace this use of System.out by a logger.(Å¸ÛÍıÿÿÿÿ8Ù“ Ñ¬1
+L	java:S106"+Replace this use of System.out by a logger.(ÿ©ü…ÿÿÿÿÿ8Û“ Ñ¬1
+G	java:S106"+Replace this use of System.out by a logger.(ÀÖÑ¡8İ“ Ñ¬1
+L	java:S106"+Replace this use of System.out by a logger.(ŸÄîãùÿÿÿÿ8á“ Ñ¬1
+G	java:S106"+Replace this use of System.out by a logger.(ğ– Ü8ã“ Ñ¬1
+L	java:S106"+Replace this use of System.out by a logger.(¨Êıøÿÿÿÿ8å“ Ñ¬1
+L	java:S106"+Replace this use of System.out by a logger.(áâÁåÿÿÿÿÿ8æ“ Ñ¬1
+G	java:S106 "+Replace this use of System.out by a logger.(ıŒõõ8é“ Ñ¬1
+G	java:S106!"+Replace this use of System.out by a logger.(ÙÉŠ8ê“ Ñ¬1
+G	java:S106""+Replace this use of System.out by a logger.(²Æ¸÷8ì“ Ñ¬1
+G	java:S106#"+Replace this use of System.out by a logger.(Å²¶›8í“ Ñ¬1
+G	java:S106$"+Replace this use of System.out by a logger.(ïì¦8î“ Ñ¬1
+F	java:S106>"+Replace this use of System.out by a logger.(ÕøÜ8û“ Ñ¬1
+L	java:S106H"+Replace this use of System.out by a logger.(¨Úİûÿÿÿÿ8ÿ“ Ñ¬1
+G	java:S106]"+Replace this use of System.out by a logger.(¥®÷Ã8ˆ” Ñ¬1
+G	java:S106h"+Replace this use of System.out by a logger.(¥®÷Ã8” Ñ¬1
+G	java:S106{"+Replace this use of System.out by a logger.(˜‹†œ8–” Ñ¬1
+G	java:S106~"+Replace this use of System.out by a logger.(ÅòŸˆ8›” Ñ¬1
+H	java:S106ƒ"+Replace this use of System.out by a logger.(í ù¢8œ” Ñ¬1
+M	java:S106†"+Replace this use of System.out by a logger.(ºØ¥‚ıÿÿÿÿ8” Ñ¬1
+H	java:S106"+Replace this use of System.out by a logger.(§ç¶8 ” Ñ¬1
+H	java:S106•"+Replace this use of System.err by a logger.(¢í¾³8¥” Ñ¬1
+M	java:S106›"+Replace this use of System.out by a logger.(ÎÇ²ğüÿÿÿÿ8ª” Ñ¬1

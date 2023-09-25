@@ -4,7 +4,7 @@ import org.example.bai15.Properties;
 import org.example.bai15.model.AcademicResult;
 import org.example.bai15.model.PartTimeStudent;
 import org.example.bai15.model.RegularStudent;
-import org.example.common.ConnectionSigletonPattern;
+import org.example.common.ConnectDB;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -31,13 +31,14 @@ public class StudentDao {
 
   public void insertStudent(RegularStudent student, int departmentId) {
     String insertSQL = "INSERT INTO Students (full_name, date_of_birth, enrollment_year," +
-        " entry_score, student_type, training_location, department_id) VALUES (?, ?, ?, ?, ?, ?, ?)";
-    try (Connection conn = ConnectionSigletonPattern.getInstance(Properties.DB_NAME);
+        " entry_score, student_type, training_location, department_id) VALUES (?, ?, ?, ?, ?, ?, ?);" +
+        " SELECT SCOPE_IDENTITY()";
+    try (Connection conn = ConnectDB.getConnection(Properties.DB_NAME);
          PreparedStatement preparedStatement = conn.prepareStatement(insertSQL)) {
       preparedStatement.setString(1, student.getFullName());
       preparedStatement.setDate(2, new java.sql.Date(student.getDob().getTime()));
       preparedStatement.setInt(3, student.getEnrollmentYear());
-      preparedStatement.setDouble(4, student.getEnrollmentYear());
+      preparedStatement.setFloat(4, (float) student.getEntranceScore());
       if (student instanceof PartTimeStudent) {
         preparedStatement.setString(5, "partTimeStudent");
         preparedStatement.setString(6, ((PartTimeStudent) student).getTrainingLocation());
@@ -47,22 +48,38 @@ public class StudentDao {
       }
       preparedStatement.setInt(7, departmentId);
       preparedStatement.executeUpdate();
+      ResultSet generatedKeys = preparedStatement.getGeneratedKeys();
+      int studentId;
+
+      if (generatedKeys.next()) {
+        studentId = generatedKeys.getInt(1);
+      } else {
+        studentId = 0;
+      }
+
+      student.getAcademicResults().forEach(result -> {
+        try {
+          AcademicResultDao.getInstance().insertAcademicResult(result, studentId);
+        } catch (SQLException e) {
+          e.printStackTrace();
+        }
+      });
     } catch (SQLException e) {
-      System.err.println("ket noi db that bai");
+      e.printStackTrace();
     }
   }
 
   public List<RegularStudent> getAllStudent(int departmentId) {
     List<RegularStudent> students = new ArrayList<>();
     String selectSQL = "SELECT * FROM Students WHERE department_id = ?";
-    try (Connection conn = ConnectionSigletonPattern.getInstance(Properties.DB_NAME);
+    try (Connection conn = ConnectDB.getConnection(Properties.DB_NAME);
          PreparedStatement preparedStatement = conn.prepareStatement(selectSQL)) {
       preparedStatement.setInt(1, departmentId);
       ResultSet resultSet = preparedStatement.executeQuery();
 
       // Lặp qua kết quả và thêm sinh viên vào danh sách
       while (resultSet.next()) {
-        String id = resultSet.getString("student_id");
+        String id = resultSet.getString("id");
         String fullName = resultSet.getString("full_name");
         java.util.Date dob = resultSet.getDate("date_of_birth");
         int enrollmentYear = resultSet.getInt("enrollment_year");
@@ -82,7 +99,7 @@ public class StudentDao {
       }
 
     } catch (SQLException e) {
-      System.err.println("ket noi db that bai");
+      e.printStackTrace();
     }
     return students;
   }

@@ -103,7 +103,9 @@ public class Main {
               .forEach(dep -> {
                 System.out.println(">>> khoa: " + dep.getDepartmentName());
                 RegularStudent student1 = dep.findStudentWithHighestGpa();
-                student1.output();
+                if (student1 != null) {
+                  student1.output();
+                }
               });
           break;
         case 9:
@@ -111,8 +113,17 @@ public class Main {
           // Gọi hàm để sắp xếp
           DepartmentDao.getInstance()
               .getAll()
-              .forEach(dep -> dep.getStudents()
-                  .sort((student1, student2) -> Integer.compare(student2.getEnrollmentYear(), student1.getEnrollmentYear())));
+              .stream()
+              .peek(dep -> dep.getStudents()
+                  .sort((student1, student2) -> Integer
+                      .compare(student2.getEnrollmentYear(),student1.getEnrollmentYear())))
+              .forEach(dep -> {
+                System.out.println(">>> khoa: " + dep.getDepartmentName());
+                RegularStudent student1 = dep.findStudentWithHighestGpa();
+                if (student1 != null) {
+                  student1.output();
+                }
+              });
           break;
         case 10:
           // Thống kê số lượng sinh viên theo năm vào học
@@ -153,7 +164,7 @@ public class Main {
 
   public static RegularStudent inputStudentInfo() {
     System.out.println(">>> Nhập thông tin sinh viên:");
-    String type = InputUtil.inputString("Student type: ");
+    String type = InputUtil.inputString("Student type (partTimeStudent/regularStudent): ");
     String fullName = InputUtil.inputString("Full Name: ");
     Date dob = null;
     try {
@@ -172,8 +183,9 @@ public class Main {
     List<AcademicResult> academicResults = inputAcademicResults(numOfResults);
 
     return "partTimeStudent".equalsIgnoreCase(type)
-        ? new RegularStudent("", fullName, dob, enrollmentYear, entranceScore, academicResults)
-        : new PartTimeStudent("", fullName, dob, enrollmentYear, entranceScore, academicResults, trainingLocation);
+        ? new PartTimeStudent("", fullName, dob, enrollmentYear, entranceScore, academicResults,
+        trainingLocation)
+        : new RegularStudent("", fullName, dob, enrollmentYear, entranceScore, academicResults);
   }
 
   private static List<AcademicResult> inputAcademicResults(int numOfResults) {
